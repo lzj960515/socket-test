@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc && mkdir -p dist/public && cp -R public/* dist/public/ || true",
     "start": "npm run build && node dist/server.js",
-    "dev": "tsx watch src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
