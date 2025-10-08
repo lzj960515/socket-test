@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 聊天（Socket.IO + VoltAgent）</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="brand">AI Chat</div>
+      <div class="conn"><span id="status">未连接</span></div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <button id="btnNewSession">+ 新建会话</button>
+        </div>
+        <ul id="sessionList" class="session-list"></ul>
+      </aside>
+
+      <main class="main">
+        <div class="card chat">
+          <ul id="messages" class="messages"></ul>
+        </div>
+
+        <div class="composer">
+          <input id="msgInput" placeholder="发送消息…（Enter 发送，Shift+Enter 换行）" />
+          <button id="btnSend">发送</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/ai-client.js"></script>
+  </body>
+  </html>

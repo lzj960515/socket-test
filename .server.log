@@ -1,0 +1,2 @@
+OPENAI_API_KEY not set. AI streaming will fail until provided.
+Server listening on http://localhost:3000

@@ -1,0 +1,35 @@
+{
+  "name": "socket-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc && mkdir -p dist/public && cp -R public/* dist/public/ || true",
+    "start": "npm run build && node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.44",
+    "@voltagent/core": "^1.1.25",
+    "@voltagent/libsql": "^1.0.7",
+    "@voltagent/logger": "^1.0.2",
+    "@voltagent/server-hono": "^1.0.16",
+    "ai": "^5.0.60",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "zod": "^3.25.76",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.8",
+    "@voltagent/cli": "^0.1.11",
+    "tsdown": "^0.15.6",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
